@@ -19,7 +19,7 @@ export const Problem = () => {
             We Understand Your Worry
           </h2>
           <p className="text-xl text-gray-600">
-            Living away from your parents comes with constant concerns about their wellbeing
+            Living away isn’t just about distance — it’s about lack of control and constant uncertainty.
           </p>
         </div>
 
@@ -49,7 +49,7 @@ export const Problem = () => {
         {/* Emotional Hook */}
         <div className="mt-16 text-center max-w-2xl mx-auto">
           <p className="text-2xl font-semibold text-gray-800 italic">
-            "Every missed call fills you with dread. Every festival, you wish you were there."
+            "Every missed call feels heavy. Every situation feels out of control."
           </p>
           <div className="mt-6 h-1 w-24 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full mx-auto"></div>
         </div>

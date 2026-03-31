@@ -80,7 +80,7 @@ export const Hero = () => {
           </div>
 
           {/* Trust Indicators */}
-          <div className="mt-12 flex flex-wrap items-center gap-8 animate-in fade-in duration-700 delay-500">
+          {/* <div className="mt-12 flex flex-wrap items-center gap-8 animate-in fade-in duration-700 delay-500">
             <div className="flex items-center gap-2">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4].map((i) => (
@@ -108,7 +108,7 @@ export const Hero = () => {
               </div>
               <span className="text-sm text-gray-600 font-medium">4.9/5 Rating</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

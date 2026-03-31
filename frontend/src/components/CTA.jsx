@@ -14,15 +14,28 @@ export const CTA = () => {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Mock form submission
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', phone: '', email: '', message: '' });
-    }, 3000);
+    try {
+      const response = await fetch("https://formspree.io/f/xvzvrrjz", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        setIsSubmitted(true);
+        setTimeout(() => {
+          setIsSubmitted(false);
+          setFormData({ name: '', phone: '', email: '', message: '' });
+        }, 3000);
+      } else {
+        alert("Failed to send request. Please try again later.");
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+    }
   };
 
   const handleChange = (e) => {
@@ -191,9 +204,9 @@ export const CTA = () => {
                   <p className="text-emerald-50 font-medium">
                     Available: 24/7 for emergencies
                   </p>
-                  <p className="text-emerald-100 text-sm">
+                  {/* <p className="text-emerald-100 text-sm">
                     Office Hours: Mon-Sat, 9 AM - 7 PM
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

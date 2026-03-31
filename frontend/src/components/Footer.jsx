@@ -74,14 +74,14 @@ export const Footer = () => {
                   How It Works
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button
                   onClick={() => scrollToSection('pricing')}
                   className="text-gray-400 hover:text-emerald-400 transition-colors duration-200"
                 >
                   Pricing
                 </button>
-              </li>
+              </li> */}
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
@@ -109,7 +109,7 @@ export const Footer = () => {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-emerald-400 mt-0.5 flex-shrink-0" />
                 <a
-                  href={`mailto:${mockData.company.email}`}
+                  href="mailto:care@blissbarter.com"
                   className="text-gray-400 hover:text-emerald-400 transition-colors duration-200"
                 >
                   {mockData.company.email}
@@ -129,13 +129,13 @@ export const Footer = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 {mockData.company.name}. All rights reserved.
+              © 2026 {mockData.company.name}. All rights reserved.
             </p>
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
+            {/* <div className="flex items-center gap-2 text-gray-400 text-sm">
               <span>Made with</span>
               <Heart className="w-4 h-4 fill-red-500 text-red-500" />
               <span>in Pune</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

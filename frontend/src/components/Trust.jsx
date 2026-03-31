@@ -47,7 +47,7 @@ export const Trust = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-20 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-12 text-white">
+        {/* <div className="mt-20 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-12 text-white">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div className="transform hover:scale-110 transition-transform duration-300">
               <div className="text-5xl font-bold mb-2">500+</div>
@@ -66,7 +66,7 @@ export const Trust = () => {
               <div className="text-emerald-100 text-lg">Average Rating</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

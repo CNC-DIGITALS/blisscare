@@ -5,76 +5,80 @@ export const mockData = {
     name: "BlissCare",
     tagline: "We care when you can't be there",
     location: "Pune, Maharashtra",
-    phone: "+91 98765 43210",
-    whatsapp: "+919876543210",
+    phone: "+919834462988",
+    whatsapp: "+919834462988",
     email: "care@blisscare.in",
-    address: "123 Care Avenue, Koregaon Park, Pune - 411001"
+    address: "Shop no 43, Aditya Shagun Mall, NDA - Pashan Road, Bavdhan,\n Pune - 411021\nIndia"
   },
   
   hero: {
     headline: "Your Parents Deserve Care, Even When You're Not There",
-    subheadline: "Professional care and companionship for elderly parents in Pune whose children live away",
+    subheadline: "A structured, reliable support system for elderly parents in Pune — with real-time updates, on-ground help, and immediate action when needed.",
     image: "https://images.unsplash.com/photo-1580869318757-a6c605b061ed?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwzfHxlbGRlcmx5JTIwY2FyZXxlbnwwfHx8fDE3NzQ5NTA5Mzd8MA&ixlib=rb-4.1.0&q=85"
   },
 
   problems: [
     {
-      title: "Parents Living Alone",
-      description: "Your parents need support with daily activities but you're miles away",
+      title: "No Visibility",
+      description: "You don’t know what’s happening in their daily life",
       icon: "home"
     },
     {
-      title: "Missed Emergencies",
-      description: "The constant worry about what happens if there's a medical emergency",
+      title: "No Trusted Person",
+      description: "No reliable person on ground to handle real situations",
       icon: "heart-pulse"
     },
     {
-      title: "Emotional Distance",
-      description: "They miss the companionship and emotional support of having family around",
+      title: "No Immediate Action",
+      description: "In emergencies, every minute matters — but who will respond?",
       icon: "users"
     },
     {
-      title: "Guilt & Anxiety",
-      description: "You feel guilty about not being there when they need you most",
+      title: "Unspoken Problems",
+      description: "Parents often don’t share health or daily struggles clearly",
       icon: "alert-circle"
     }
   ],
 
   services: [
     {
-      title: "Daily Assistance",
+      title: "Monitoring & Check-ins",
       description: "We help with everyday tasks so your parents can live comfortably and independently",
       image: "https://images.pexels.com/photos/7551675/pexels-photo-7551675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       features: [
-        "Grocery shopping and delivery",
-        "Bill payments and banking",
-        "Home maintenance coordination",
-        "Prescription pickup",
-        "Meal preparation assistance"
+        "Daily check-in calls",
+        "Wellbeing tracking",
+        "Verified updates to family",
       ]
     },
     {
-      title: "Medical Care",
+      title: "On-Ground Support",
       description: "Professional healthcare support from doctor visits to emergency response",
       image: "https://images.pexels.com/photos/11030158/pexels-photo-11030158.jpeg",
       features: [
-        "Doctor appointment scheduling",
-        "Accompany to medical visits",
-        "Medication reminders",
-        "Health monitoring",
-        "24/7 emergency support"
+        "Bank & documentation work",
+        "Government/office visits",
+        "Grocery & essential errands",
       ]
     },
     {
-      title: "Emotional Support",
+      title: "Visits & Assistance",
       description: "Regular companionship and care that makes them feel valued and loved",
       image: "https://images.unsplash.com/photo-1765896387377-e293914d1e69",
       features: [
-        "Regular friendly visits",
-        "Conversation and companionship",
-        "Social activity coordination",
-        "Festival celebrations",
-        "Daily video updates to family"
+        "Scheduled home visits",
+        "Emergency visits",
+        "Real-life support when required",
+      ]
+    },
+    {
+      title: "Emergency Handling",
+      description: "Regular companionship and care that makes them feel valued and loved",
+      image: "https://images.unsplash.com/photo-1765896387377-e293914d1e69",
+      features: [
+        "Immediate response system",
+        "Coordination with hospitals/family",
+        "Priority action in urgent cases",
       ]
     }
   ],
@@ -173,28 +177,32 @@ export const mockData = {
 
   faqs: [
     {
-      question: "How do you ensure the safety of my parents?",
-      answer: "All our care managers undergo rigorous background verification, police clearance, and professional training. We also maintain regular supervision and conduct surprise quality checks."
+      question: "What happens if my parent doesn’t respond?",
+      answer: "We escalate immediately — including calling, contacting backups, and doing a physical visit if required."
     },
     {
       question: "Can I customize the services based on my parents' needs?",
-      answer: "Absolutely! Every family is unique. We create personalized care plans based on your parents' specific requirements, health conditions, and preferences."
+      answer: "Yes. We recommend plans, but services can be adjusted based on your parents' needs."
     },
     {
-      question: "How will I know what's happening with my parents?",
-      answer: "You'll receive daily updates via WhatsApp including photos, videos, and activity reports. You can also video call your parents anytime during care visits."
+      question: "What if there’s an emergency?",
+      answer: "We act immediately, visit physically if needed, and coordinate with hospitals and family."
     },
     {
-      question: "What if there's a medical emergency?",
-      answer: "We have 24/7 emergency support. Your dedicated care manager is trained in basic first aid and has direct contacts with nearby hospitals and emergency services."
+      question: "Are you a medical or nursing service?",
+      answer: "We are not a medical or nursing service. However, if required, we can arrange and coordinate trusted medical or nursing support whenever your parents need it."
     },
     {
-      question: "Do you provide services in all areas of Pune?",
-      answer: "Yes, we serve all major areas of Pune including Koregaon Park, Kothrud, Baner, Wakad, Viman Nagar, and surrounding areas."
+      question: "Do you provide services across Pune?",
+      answer: "Yes, we operate across Pune with local expertise."
     },
     {
-      question: "Can I try the service before committing?",
-      answer: "Yes! We offer a free consultation visit where our care manager meets your parents, understands their needs, and you can experience our service firsthand."
+      question: "Are there any extra charges?",
+      answer: "Yes, additional visits or tasks beyond your plan may be charged separately."
+    },
+    {
+      question: "Can I try before committing long-term?",
+      answer: "Yes, you can start with a monthly plan."
     }
   ],
 
@@ -224,7 +232,7 @@ export const mockData = {
 
   story: {
     headline: "When Distance Doesn't Mean Absence",
-    text: "Mrs. Patel's son moved to London for work three years ago. Every call home was filled with worry - Is she eating properly? Did she remember her medicines? Who will help if something happens? When he discovered BlissCare, everything changed. Now Mrs. Patel has a dedicated care manager who visits her three times a week, helps with groceries, accompanies her to doctor visits, and simply sits and chats over tea. Her son receives daily photos and updates. 'I finally sleep peacefully at night,' he says. 'It's like having a family member there with her.'",
+    text: `Mr. Hiwarkar's son moved to Europe with her beloved Girlfriend for love one year ago. Every call home was filled with worry - Are they eating properly? Did they remember their medicines? Who will help if something happens? Well obivously, Shatanand didn't thought about this when choosing her Love over Parents but no worries he found BlissCare, everything changed. Now Mr. Hiwarkar has a dedicated care manager who visits him three times a week, helps with routine, accompanies him to doctor visits, and simply sits and chats over tea. His son receives daily photos and updates. 'I finally sleep regretting at night about choosing love over parents,' he says. 'It's like having a family member there with him.'\n\n- Shatanand Hiwarkar`,
     image: "https://images.pexels.com/photos/7551675/pexels-photo-7551675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   }
 };

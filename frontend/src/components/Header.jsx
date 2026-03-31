@@ -36,7 +36,6 @@ export const Header = () => {
     { label: 'Home', sectionId: 'home' },
     { label: 'Services', sectionId: 'services' },
     { label: 'How It Works', sectionId: 'how-it-works' },
-    { label: 'Pricing', sectionId: 'pricing' },
     { label: 'Contact', sectionId: 'contact' }
   ];
 
@@ -79,13 +78,14 @@ export const Header = () => {
 
           {/* CTA Button - Desktop */}
           <div className="hidden md:block">
-            <Button
-              onClick={() => scrollToSection('contact')}
+            <a
+              href={`tel:${mockData.company.phone}`}
               className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2"
+              style={{ textDecoration: 'none' }}
             >
               <Phone className="w-4 h-4" />
               Call Now
-            </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -110,13 +110,14 @@ export const Header = () => {
                   {item.label}
                 </button>
               ))}
-              <Button
-                onClick={() => scrollToSection('contact')}
+              <a
+                href={`tel:${mockData.company.phone}`}
                 className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white py-2 rounded-lg font-semibold flex items-center justify-center gap-2 mt-2"
+                style={{ textDecoration: 'none' }}
               >
                 <Phone className="w-4 h-4" />
                 Call Now
-              </Button>
+              </a>
             </nav>
           </div>
         )}
