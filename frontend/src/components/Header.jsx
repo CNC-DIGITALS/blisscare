@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Phone, Menu, X } from 'lucide-react';
-import { Button } from './ui/button';
-import { mockData } from '../mock';
+import React, { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Phone, Menu, X } from "lucide-react";
+import { Button } from "./ui/button";
+import { mockData } from "../mock";
+import logo from "../assets/blisscare_logo.jpg";
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,8 +14,8 @@ export const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (sectionId) => {
@@ -23,43 +24,44 @@ export const Header = () => {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      
+
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
     setIsMobileMenuOpen(false);
   };
 
   const navItems = [
-    { label: 'Home', sectionId: 'home' },
-    { label: 'Services', sectionId: 'services' },
-    { label: 'How It Works', sectionId: 'how-it-works' },
-    { label: 'Contact', sectionId: 'contact' }
+    { label: "Home", sectionId: "home" },
+    { label: "Services", sectionId: "services" },
+    { label: "How It Works", sectionId: "how-it-works" },
+    { label: "Contact", sectionId: "contact" },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-md py-3'
-          : 'bg-white/95 backdrop-blur-sm py-4'
+          ? "bg-white shadow-md py-3"
+          : "bg-white/95 backdrop-blur-sm py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection('home')}
-            className="flex items-center gap-2 group"
+            onClick={() => scrollToSection("home")}
+            className="flex items-center"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-transform duration-200">
-              <span className="text-white font-bold text-xl">B</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-              {mockData.company.name}
-            </span>
+            <img
+              src={logo}
+              alt="BlissCare Logo"
+              className="h-12 md:h-16 w-auto object-contain 
+               transition-transform duration-200 
+               hover:scale-105"
+            />
           </button>
 
           {/* Desktop Navigation */}
@@ -81,7 +83,7 @@ export const Header = () => {
             <a
               href={`tel:${mockData.company.phone}`}
               className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 flex items-center gap-2"
-              style={{ textDecoration: 'none' }}
+              style={{ textDecoration: "none" }}
             >
               <Phone className="w-4 h-4" />
               Call Now
@@ -93,7 +95,11 @@ export const Header = () => {
             className="md:hidden text-gray-700 hover:text-emerald-600 transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -113,7 +119,7 @@ export const Header = () => {
               <a
                 href={`tel:${mockData.company.phone}`}
                 className="bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white py-2 rounded-lg font-semibold flex items-center justify-center gap-2 mt-2"
-                style={{ textDecoration: 'none' }}
+                style={{ textDecoration: "none" }}
               >
                 <Phone className="w-4 h-4" />
                 Call Now

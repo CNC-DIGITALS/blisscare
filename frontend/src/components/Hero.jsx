@@ -2,6 +2,7 @@ import React from 'react';
 import { Phone, MessageCircle } from 'lucide-react';
 import { Button } from './ui/button';
 import { mockData } from '../mock';
+import img1 from '../assets/IMG_7091.jpg';
 
 export const Hero = () => {
   const handleWhatsApp = () => {
@@ -31,7 +32,7 @@ export const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src={mockData.hero.image}
+          src={img1}
           alt="Elderly care"
           className="w-full h-full object-cover"
         />

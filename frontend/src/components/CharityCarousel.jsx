@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
+import img1 from '../assets/IMG_7091.jpg';
+import img2 from '../assets/IMG_7194.jpg';
+import img3 from '../assets/IMG_7103.jpg';
 
 const charityImages = [
   {
-    src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=compress&w=600&q=80',
+    src: img1,
     alt: 'Charity Event 1',
-    caption: 'Supporting elderly with food kits',
+    caption: 'Together, we’re making a difference by providing care',
   },
   {
-    src: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=compress&w=600&q=80',
+    src: img2,
     alt: 'Charity Event 2',
-    caption: 'Medical camp for senior citizens',
+    caption: 'Distributing essential food kits to support children',
   },
   {
-    src: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=compress&w=600&q=80',
+    src: img3,
     alt: 'Charity Event 3',
-    caption: 'Community engagement activities',
+    caption: 'Small efforts, big smiles',
   },
 ];
 
@@ -54,7 +57,7 @@ export const CharityCarousel = () => {
             <img
               src={img.src}
               alt={img.alt}
-              className="rounded-2xl object-cover w-72 h-80 border-4 border-white"
+              className="rounded-2xl object-cover w-full h-80 border-4 border-white"
             />
             <div className="mt-4 text-center text-gray-700 font-semibold bg-white/80 px-4 py-2 rounded-xl shadow">
               {img.caption}
