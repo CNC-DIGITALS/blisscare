@@ -18,8 +18,8 @@ export const Home = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <Problem />
       <Solution />
+      <Problem />
       <Services />
       <HowItWorks />
       <Trust />
